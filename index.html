@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/bbfe7651c5.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philbus</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Bussin</h1>
+
+      <div class="menu-cont">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Prices</a></li>
+        <li><a id="login-btn">Log-in</a></li>
+      </div>
+    </header>
+
+    <!--FIRST PAGE-->
+    <div class="first-page" id="page1-id">
+      <!--Video Background-->
+      <video autoplay loop muted plays-inline class="background-clip" src="images/palawan.mp4" id="bg-id">
+        <source type="video/mp4" />
+        Video Not Available
+      </video>
+
+      <div class="book-now" id="book-id">
+        <p class="book-header" id="descH-id">PALAWAN</p>
+        <p class="book-desc" id="descD-id">Palawan, officially the Province of Palawan, is an archipelagic province of
+          the Philippines that is located in the region of Mimaropa. It is the largest province in the country in terms
+          of total area of 14,649.73 km2 (5,656.29 sq mi). The capital and largest city is Puerto Princesa wherein it is
+          geographically grouped but administered independently from the province. Palawan is known as the Philippines'
+          Last Frontier and as the Philippines' Best Island.</p>
+      </div>
+
+      <div class="login-page" id="login-id">
+        <p class="log-header">Login to your account</p>
+        <form>
+          <label for="user">Username:</label>
+          <input type="text" id="user" placeholder="Username" />
+          <label for="pass">Password:</label>
+          <input type="password" id="pass" placeholder="Password" />
+          <button type="button">Login</button>
+        </form>
+      </div>
+
+      <a id="capt-by" class="label-capt"
+        href="https://www.pexels.com/video/an-inflatable-boat-pulled-by-a-jet-sky-13281257/" target="_blank">Captured
+        By: Precious Granger</a>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
