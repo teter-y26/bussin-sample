@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Helvetica', sans-serif;
+}
+/* Header Page */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    color: white;
+    padding: 10px 180px; /* Adjust padding as needed */
+}
+
+h1 {
+    font-size: 40px;
+    z-index: 2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.logo {
+    margin-right: 10px;
+    height: 70px;
+    width: 70px;
+}
+
+header .menu-cont {
+    display: flex;
+    z-index: 2;
+}
+
+header .menu-cont li {
+    list-style-type: none;
+    margin: 0 20px;
+   
+}
+
+header .menu-cont li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+    transition: 55ms;
+}
+
+header .menu-cont li a:hover {
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.8); /* White box shadow with inset */
+}
+/* First Page */
+.first-page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    overflow: hidden;
+}
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.book-now {
+    position: absolute;
+    left: 5%;
+    width: 50%;
+}
+
+.book-header {
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.book-desc {
+    width: 600px;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.btn-ticket {
+    border: 2px solid white;
+    padding: 12px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    transition: 99ms;
+}
+.btn-ticket:active {
+    background-color: white;
+    color: black;
+}
+
+.label-capt {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+
+.login-page {
+    position: absolute;
+    transition: 0.5s;
+    right: -500px;
+    border: 1px solid black;
+    width: 500px;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.4); /* Transparent black background color */
+}
+
+.login-show {
+    right: 10%;
+}
+
+.login-page .log-header {
+    font-size: 35px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+form input, label {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form input {
+    width: 100%;
+    font-size: 18px;
+    padding: 8px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+}
+
+form label {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+form button {
+    margin: 40px 0;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    background-color: rgb(95, 45, 140);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 99ms;
+}
+
+form button:active {
+    background-color: transparent;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.8); /* White box shadow with inset */
+}
+@media (min-aspect-ratio:16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
